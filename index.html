@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ClassPilot | دفتر مدیریت کلاسی</title>
+<meta name="description" content="ClassPilot یک ابزار هوشمند برای مدیریت کلاس، ارزشیابی دانش‌آموزان، حضور و غیاب، تکالیف، گزارش‌گیری و بررسی پیشرفت تحصیلی است — ساخته‌شده برای معلم‌ها، مدیران، اولیا و مدارس ایران." />
+<meta name="theme-color" content="#0A3D8F" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ClassPilot | دفتر مدیریت کلاسی" />
+<meta property="og:description" content="مدیریت کلاس، ساده‌تر از همیشه — ارزشیابی، حضور و غیاب، تکالیف، تحلیل عملکرد و گزارش‌گیری، همه در یک دفتر دیجیتال." />
+<meta property="og:image" content="icons/icon-512.png" />
+<meta property="og:locale" content="fa_IR" />
+
+<link rel="icon" href="icons/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+<link rel="canonical" href="https://classpilot.ir/" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__brand">
+      <img src="icons/icon-192.png" alt="ClassPilot" class="nav__mark" />
+      <span class="nav__wordmark">ClassPilot</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#features">امکانات</a>
+      <a href="#users">برای چه کسانی</a>
+      <a href="#reports">گزارش‌ها</a>
+      <a href="#faq">سوالات متداول</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="https://sara-hazratian.github.io/class-manager/" class="btn btn--primary btn--sm">ورود به <bdi>ClassPilot</bdi></a>
+      <button class="nav__burger" id="navBurger" aria-label="باز کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ 1-2. HERO ============ -->
+<section class="hero">
+  <div class="hero__ruled" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__copy reveal">
+      <p class="eyebrow"><span class="eyebrow__mark">✓</span> دفتر مدیریت کلاسی</p>
+      <h1 class="hero__title">مدیریت کلاس،<br /><span class="hero__title-accent">ساده‌تر از همیشه</span></h1>
+      <p class="hero__lead"><bdi>ClassPilot</bdi> یک ابزار هوشمند برای مدیریت کلاس، ارزشیابی دانش‌آموزان، حضور و غیاب، تکالیف، گزارش‌گیری و بررسی پیشرفت تحصیلی است.</p>
+      <div class="hero__cta-row">
+        <a href="https://sara-hazratian.github.io/class-manager/" class="btn btn--primary btn--lg">ورود به <bdi>ClassPilot</bdi></a>
+        <a href="#how" class="btn btn--ghost btn--lg">ببینید چطور کار می‌کند</a>
+      </div>
+    </div>
+    <div class="hero__visual reveal reveal--delay-1">
+      <div class="ledger-card">
+        <div class="ledger-card__head">
+          <img src="icons/icon-192.png" alt="" class="ledger-card__logo" />
+          <div>
+            <p class="ledger-card__title">کلاس ششم ب</p>
+            <p class="ledger-card__sub">ارزشیابی روزانه — ریاضی</p>
+          </div>
+        </div>
+        <ul class="ledger-card__rows">
+          <li><span>آرمان کریمی</span><span class="tag tag--good">✓ عالی</span></li>
+          <li><span>ستایش رضایی</span><span class="tag tag--ok">✓ خوب</span></li>
+          <li><span>پارسا احمدی</span><span class="tag tag--warn">در حال ثبت…</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. FEATURES ============ -->
+<section class="section" id="features">
+  <div class="container">
+    <p class="section__eyebrow">امکانات</p>
+    <h2 class="section__title">همه چیز برای مدیریت بهتر کلاس</h2>
+    <div class="grid grid--features">
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">👩‍🏫</span>
+        <h3>مدیریت کلاس</h3>
+        <p>ابزارهای روزمره معلم برای مدیریت دانش‌آموزان و فعالیت‌های کلاس</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📝</span>
+        <h3>ارزشیابی</h3>
+        <p>ثبت ارزشیابی‌های روزانه، ماهانه، شفاهی و کتبی</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📅</span>
+        <h3>حضور و غیاب</h3>
+        <p>ثبت حضور، غیبت، تأخیر و خروج دانش‌آموزان</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📚</span>
+        <h3>تکالیف</h3>
+        <p>ثبت و پیگیری وضعیت تکالیف دانش‌آموزان</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">⚠️</span>
+        <h3>انضباط</h3>
+        <p>ثبت و پیگیری موارد انضباطی دانش‌آموزان</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">🧪</span>
+        <h3>آزمایش‌های علوم</h3>
+        <p>ثبت فعالیت‌های آزمایشگاهی و آپلود تصاویر آزمایش‌ها</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📊</span>
+        <h3>تحلیل عملکرد کلاس</h3>
+        <p>مشاهده نقاط قوت و ضعف کلاس و شناسایی مباحث نیازمند تقویت</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📈</span>
+        <h3>پیشرفت تحصیلی</h3>
+        <p>مشاهده روند پیشرفت هر دانش‌آموز در طول زمان با نمودارهای حرفه‌ای</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📄</span>
+        <h3>گزارش‌ها</h3>
+        <p>ساخت گزارش‌های هفتگی، ماهانه و نیمسال تحصیلی و خروجی PDF و Excel</p>
+      </article>
+      <article class="feature-card reveal">
+        <span class="feature-card__icon">📅</span>
+        <h3>برنامه هفتگی</h3>
+        <p>مدیریت برنامه هفتگی مدرسه و کلاس‌ها</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. USER TYPES ============ -->
+<section class="section section--tint" id="users">
+  <div class="container">
+    <p class="section__eyebrow">برای همه‌ی اعضای مدرسه</p>
+    <h2 class="section__title"><bdi>ClassPilot</bdi> برای چه کسانی است؟</h2>
+    <div class="grid grid--users">
+      <article class="user-card reveal">
+        <div class="user-card__icon">👩‍🏫</div>
+        <h3>معلم</h3>
+        <p>ابزارهای کامل برای مدیریت روزانه کلاس</p>
+      </article>
+      <article class="user-card reveal">
+        <div class="user-card__icon">🏫</div>
+        <h3>مدیر / معاون</h3>
+        <p>مدیریت و نظارت آموزشی مدرسه</p>
+      </article>
+      <article class="user-card reveal">
+        <div class="user-card__icon">👨‍👩‍👧</div>
+        <h3>ولی</h3>
+        <p>پیگیری وضعیت آموزشی فرزند</p>
+      </article>
+      <article class="user-card reveal">
+        <div class="user-card__icon">🧭</div>
+        <h3>راهبر / سرگروه آموزشی</h3>
+        <p>مشاهده و تحلیل عملکرد آموزشی کلاس‌ها</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. HOW IT WORKS ============ -->
+<section class="section" id="how">
+  <div class="container">
+    <p class="section__eyebrow">روند کار</p>
+    <h2 class="section__title">چطور کار می‌کند؟</h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step__icon">✏️</div>
+        <p class="step__label">ثبت اطلاعات</p>
+      </div>
+      <div class="step__line" aria-hidden="true"></div>
+      <div class="step reveal">
+        <div class="step__icon">✓</div>
+        <p class="step__label">مدیریت و ارزشیابی</p>
+      </div>
+      <div class="step__line" aria-hidden="true"></div>
+      <div class="step reveal">
+        <div class="step__icon">📊</div>
+        <p class="step__label">تحلیل عملکرد</p>
+      </div>
+      <div class="step__line" aria-hidden="true"></div>
+      <div class="step reveal">
+        <div class="step__icon">📄</div>
+        <p class="step__label">گزارش‌گیری</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. TEACHER SECTION ============ -->
+<section class="section section--split" id="teacher">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="section__eyebrow">برای معلم‌ها</p>
+      <h2 class="section__title section__title--start">ساخته شده برای معلم‌ها</h2>
+      <p class="split__lead">همه‌ی فعالیت‌های روزانه‌ی کلاس، از یک‌جا — دیگر نیازی به چند دفتر جداگانه نیست.</p>
+      <ul class="check-list">
+        <li>حضور و غیاب</li>
+        <li>ارزشیابی‌ها</li>
+        <li>تکالیف</li>
+        <li>انضباط</li>
+        <li>آزمایش‌های علوم</li>
+        <li>پیشرفت دانش‌آموزان</li>
+        <li>تحلیل کلاس</li>
+        <li>گزارش‌ها</li>
+      </ul>
+    </div>
+    <div class="split__visual reveal reveal--delay-1">
+      <div class="mock-frame mock-frame--browser">
+        <div class="mock-frame__bar"><span></span><span></span><span></span></div>
+        <div class="mock-frame__body mock-frame__body--dash">
+          <div class="mock-stat"><p class="mock-stat__num">۲۴</p><p class="mock-stat__label">دانش‌آموز</p></div>
+          <div class="mock-stat"><p class="mock-stat__num">٪۹۲</p><p class="mock-stat__label">حضور امروز</p></div>
+          <div class="mock-stat"><p class="mock-stat__num">۵</p><p class="mock-stat__label">ارزشیابی ثبت‌شده</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. MANAGER / ASSISTANT SECTION ============ -->
+<section class="section section--split section--split-rev section--tint" id="manager">
+  <div class="container split">
+    <div class="split__visual reveal reveal--delay-1">
+      <div class="mock-frame mock-frame--browser">
+        <div class="mock-frame__bar"><span></span><span></span><span></span></div>
+        <div class="mock-frame__body mock-frame__body--grid">
+          <div class="mock-chip">📅 برنامه‌ی هفتگی</div>
+          <div class="mock-chip">👤 افزودن معلم</div>
+          <div class="mock-chip">🧭 افزودن راهبر/سرگروه</div>
+          <div class="mock-chip">🔍 همه‌ی دانش‌آموزان</div>
+        </div>
+      </div>
+    </div>
+    <div class="split__copy reveal">
+      <p class="section__eyebrow">برای مدیر و معاون</p>
+      <h2 class="section__title section__title--start">مدیریت آموزشی مدرسه</h2>
+      <p class="split__lead">نظارت کامل بر مدرسه، بدون دخالت غیرضروری در ثبت ارزشیابی معلم‌ها.</p>
+      <ul class="check-list">
+        <li>افزودن معلم</li>
+        <li>افزودن راهبر آموزشی</li>
+        <li>افزودن سرگروه آموزشی</li>
+        <li>مشاهده‌ی همه‌ی دانش‌آموزان</li>
+        <li>برنامه‌ی هفتگی مدرسه</li>
+        <li>تحلیل عملکرد کلاس‌ها</li>
+        <li>پیشرفت تحصیلی</li>
+        <li>گزارش‌های مدرسه</li>
+        <li>نظارت بر انضباط</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. PARENT SECTION ============ -->
+<section class="section section--split" id="parent">
+  <div class="container split">
+    <div class="split__copy reveal">
+      <p class="section__eyebrow">برای اولیا</p>
+      <h2 class="section__title section__title--start">والدین هم در جریان هستند</h2>
+      <p class="split__lead">اولیا می‌توانند وضعیت آموزشی فرزندشان را، مطابق دسترسی‌های تعریف‌شده در <bdi>ClassPilot</bdi>، پیگیری کنند.</p>
+    </div>
+    <div class="split__visual reveal reveal--delay-1">
+      <div class="mock-frame mock-frame--phone">
+        <div class="mock-frame__notch"></div>
+        <div class="mock-frame__body mock-frame__body--phone">
+          <p class="mock-phone__name">آرمان کریمی</p>
+          <div class="mock-bar"><span style="width:82%"></span></div>
+          <p class="mock-phone__caption">ریاضی — ٪۸۲</p>
+          <div class="mock-bar"><span style="width:64%"></span></div>
+          <p class="mock-phone__caption">فارسی — ٪۶۴</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 9. ANALYTICS ============ -->
+<section class="section section--dark" id="analytics">
+  <div class="container">
+    <p class="section__eyebrow section__eyebrow--onDark">تحلیل هوشمند</p>
+    <h2 class="section__title section__title--onDark">فقط ثبت اطلاعات نیست؛ تحلیل هم می‌کنیم</h2>
+    <p class="sample-note">نمونه نمایش — این نمودارها برای نمایش قابلیت طراحی شده‌اند</p>
+    <div class="analytics-grid">
+      <div class="analytics-card reveal">
+        <p class="analytics-card__label">میانگین کلاس</p>
+        <svg viewBox="0 0 120 120" class="ring-chart" aria-hidden="true">
+          <circle cx="60" cy="60" r="50" class="ring-chart__track" />
+          <circle cx="60" cy="60" r="50" class="ring-chart__value" style="--pct:78" />
+        </svg>
+        <p class="analytics-card__big">٪۷۸</p>
+      </div>
+      <div class="analytics-card reveal">
+        <p class="analytics-card__label">مباحث قوی و ضعیف</p>
+        <ul class="bar-list">
+          <li><span>مختصات</span><div class="bar-list__track"><div class="bar-list__fill bar-list__fill--good" style="width:85%"></div></div></li>
+          <li><span>اعشار</span><div class="bar-list__track"><div class="bar-list__fill bar-list__fill--ok" style="width:64%"></div></div></li>
+          <li><span>کسرها</span><div class="bar-list__track"><div class="bar-list__fill bar-list__fill--warn" style="width:43%"></div></div></li>
+        </ul>
+      </div>
+      <div class="analytics-card reveal">
+        <p class="analytics-card__label">روند پیشرفت</p>
+        <svg viewBox="0 0 220 90" class="trend-chart" aria-hidden="true">
+          <polyline points="10,70 60,55 110,40 160,30 210,15" class="trend-chart__line" />
+          <circle cx="210" cy="15" r="4" class="trend-chart__dot" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 10. REPORTS ============ -->
+<section class="section" id="reports">
+  <div class="container">
+    <p class="section__eyebrow">گزارش‌گیری</p>
+    <h2 class="section__title">گزارش‌های کامل و قابل چاپ</h2>
+    <div class="grid grid--reports">
+      <div class="report-item reveal"><span>📅</span>گزارش هفتگی</div>
+      <div class="report-item reveal"><span>🗓️</span>گزارش ماهانه</div>
+      <div class="report-item reveal"><span>📘</span>گزارش نیمسال اول</div>
+      <div class="report-item reveal"><span>📗</span>گزارش نیمسال دوم</div>
+      <div class="report-item reveal"><span>👥</span>گزارش کلاس</div>
+      <div class="report-item reveal"><span>👤</span>گزارش دانش‌آموز</div>
+      <div class="report-item reveal"><span>✅</span>حضور و غیاب</div>
+      <div class="report-item reveal"><span>📝</span>ارزشیابی‌ها</div>
+      <div class="report-item reveal"><span>📊</span>عملکرد تحصیلی</div>
+      <div class="report-item reveal"><span>📈</span>پیشرفت تحصیلی</div>
+      <div class="report-item reveal"><span>⚠️</span>اطلاعات انضباطی</div>
+    </div>
+    <div class="export-row reveal">
+      <span class="export-pill">خروجی PDF</span>
+      <span class="export-pill">خروجی Excel</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 11. VISUAL APP PREVIEW ============ -->
+<section class="section section--tint" id="preview">
+  <div class="container">
+    <p class="section__eyebrow">پیش‌نمایش</p>
+    <h2 class="section__title">همه‌جا همراه شما</h2>
+    <p class="section__lead">روی موبایل، تبلت و کامپیوتر — با همان تجربه‌ی ساده و روان.</p>
+    <div class="devices reveal">
+      <div class="mock-frame mock-frame--phone mock-frame--device">
+        <div class="mock-frame__notch"></div>
+        <div class="mock-frame__body mock-frame__body--phone">
+          <p class="mock-phone__name">حضور و غیاب</p>
+          <div class="mock-chip mock-chip--sm">✓ حاضر</div>
+          <div class="mock-chip mock-chip--sm">✓ حاضر</div>
+          <div class="mock-chip mock-chip--sm mock-chip--warn">غایب</div>
+        </div>
+      </div>
+      <div class="mock-frame mock-frame--tablet mock-frame--device">
+        <div class="mock-frame__body mock-frame__body--grid">
+          <div class="mock-chip">📊 تحلیل</div>
+          <div class="mock-chip">📈 پیشرفت</div>
+          <div class="mock-chip">📄 گزارش</div>
+          <div class="mock-chip">📅 برنامه</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 12. SECURITY ============ -->
+<section class="section" id="security">
+  <div class="container">
+    <p class="section__eyebrow">امنیت و سطح دسترسی</p>
+    <h2 class="section__title">هرکس فقط به آنچه لازم دارد دسترسی دارد</h2>
+    <p class="section__lead"><bdi>ClassPilot</bdi> از دسترسی نقش‌محور استفاده می‌کند — هر کاربر فقط به اطلاعات متناسب با نقش خودش دسترسی دارد.</p>
+    <div class="role-chips reveal">
+      <span class="role-chip">معلم</span>
+      <span class="role-chip">مدیر</span>
+      <span class="role-chip">معاون</span>
+      <span class="role-chip">ولی</span>
+      <span class="role-chip">راهبر آموزشی</span>
+      <span class="role-chip">سرگروه آموزشی</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 13. FAQ ============ -->
+<section class="section section--tint" id="faq">
+  <div class="container container--narrow">
+    <p class="section__eyebrow">سوالات متداول</p>
+    <h2 class="section__title">سوالات پرتکرار</h2>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false"><bdi>ClassPilot</bdi> برای چه کسانی است؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>برای معلم‌ها، مدیران و معاونان مدرسه، اولیا، و راهبران/سرگروه‌های آموزشی — هرکدام با دسترسی متناسب با نقش خودشان.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">آیا روی موبایل هم قابل استفاده است؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>بله، <bdi>ClassPilot</bdi> به‌طور کامل روی موبایل، تبلت و کامپیوتر قابل استفاده است.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">آیا والدین هم می‌توانند از <bdi>ClassPilot</bdi> استفاده کنند؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>بله، اولیا می‌توانند وضعیت آموزشی فرزند خود را، مطابق دسترسی‌های تعریف‌شده، پیگیری کنند.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">آیا امکان گزارش‌گیری وجود دارد؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>بله، گزارش‌های هفتگی، ماهانه، نیمسال اول و دوم، در سطح کلاس یا دانش‌آموز، قابل تهیه هستند.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">آیا گزارش‌ها قابل دریافت به‌صورت PDF و Excel هستند؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>بله، هر دو فرمت PDF و Excel پشتیبانی می‌شوند.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">آیا مدیر و معاون می‌توانند عملکرد کلاس‌ها را مشاهده کنند؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>بله، مدیر و معاون می‌توانند عملکرد و پیشرفت کلاس‌ها را مشاهده کنند، بدون این‌که در ثبت ارزشیابی معلم‌ها دخالت کنند.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-item__q" aria-expanded="false">راهبر و سرگروه آموزشی چه دسترسی‌ای دارند؟<span class="faq-item__icon">+</span></button>
+        <div class="faq-item__a"><p>راهبر و سرگروه آموزشی می‌توانند عملکرد و پیشرفت آموزشی کلاس‌ها را مشاهده و تحلیل کنند.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14. CTA ============ -->
+<section class="cta">
+  <div class="cta__ruled" aria-hidden="true"></div>
+  <div class="container cta__inner reveal">
+    <h2 class="cta__title">کلاس خود را هوشمندتر مدیریت کنید</h2>
+    <p class="cta__lead"><bdi>ClassPilot</bdi>؛ دفتر مدیریت کلاسی شما</p>
+    <a href="https://sara-hazratian.github.io/class-manager/" class="btn btn--primary btn--lg">ورود به <bdi>ClassPilot</bdi></a>
+  </div>
+</section>
+
+<!-- ============ 15. CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container container--narrow">
+    <p class="section__eyebrow">تماس با ما</p>
+    <h2 class="section__title">در ارتباط باشید</h2>
+    <div class="contact-grid reveal">
+      <a href="mailto:CONFIG_SUPPORT_EMAIL" class="contact-item"><span>✉️</span>CONFIG_SUPPORT_EMAIL</a>
+      <a href="tel:CONFIG_SUPPORT_PHONE" class="contact-item"><span>📞</span>CONFIG_SUPPORT_PHONE</a>
+      <a href="CONFIG_INSTAGRAM_URL" class="contact-item"><span>📷</span>اینستاگرام</a>
+      <a href="CONFIG_TELEGRAM_URL" class="contact-item"><span>💬</span>تلگرام</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ 16. FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="icons/icon-192.png" alt="ClassPilot" class="footer__mark" />
+      <div>
+        <p class="footer__wordmark">ClassPilot</p>
+        <p class="footer__tagline">دفتر مدیریت کلاسی</p>
+      </div>
+    </div>
+    <nav class="footer__links">
+      <a href="#features">امکانات</a>
+      <a href="#top">درباره <bdi>ClassPilot</bdi></a>
+      <a href="#faq">سوالات متداول</a>
+      <a href="#contact">تماس با ما</a>
+      <a href="#">حریم خصوصی</a>
+      <a href="#">قوانین استفاده</a>
+    </nav>
+  </div>
+  <div class="container footer__copy">© ClassPilot</div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
