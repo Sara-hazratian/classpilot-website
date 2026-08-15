@@ -1,9 +1,7 @@
 /* ============================================================
    CLASSPILOT MARKETING SITE — interactions
-   Kept intentionally small: no framework, no build step.
    ============================================================ */
 
-// ---------- Mobile nav toggle ----------
 const burger = document.getElementById("navBurger");
 const navLinks = document.getElementById("navLinks");
 if (burger && navLinks) {
@@ -17,7 +15,6 @@ if (burger && navLinks) {
   }));
 }
 
-// ---------- Scroll-reveal ----------
 const revealEls = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && revealEls.length) {
   const io = new IntersectionObserver((entries) => {
@@ -29,23 +26,17 @@ if ("IntersectionObserver" in window && revealEls.length) {
     });
   }, { threshold: 0.15, rootMargin: "0px 0px -40px 0px" });
   revealEls.forEach(el => io.observe(el));
-
-  // Safety net: content must never stay invisible forever. If something
-  // never crosses the viewport threshold (unusual scroll behavior, a very
-  // short page, etc.), reveal it anyway after a few seconds.
   setTimeout(() => revealEls.forEach(el => el.classList.add("is-visible")), 4000);
 } else {
   revealEls.forEach(el => el.classList.add("is-visible"));
 }
 
-// ---------- FAQ accordion ----------
 document.querySelectorAll(".faq-item__q").forEach(btn => {
   btn.addEventListener("click", () => {
     const item = btn.closest(".faq-item");
     const answer = item.querySelector(".faq-item__a");
     const isOpen = btn.getAttribute("aria-expanded") === "true";
 
-    // Close any other open item for a cleaner single-focus reading experience.
     document.querySelectorAll(".faq-item__q[aria-expanded='true']").forEach(openBtn => {
       if (openBtn !== btn) {
         openBtn.setAttribute("aria-expanded", "false");
@@ -58,7 +49,6 @@ document.querySelectorAll(".faq-item__q").forEach(btn => {
   });
 });
 
-// ---------- Sticky nav shadow on scroll ----------
 const nav = document.getElementById("nav");
 if (nav) {
   window.addEventListener("scroll", () => {

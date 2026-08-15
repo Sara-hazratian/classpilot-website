@@ -1,11 +1,5 @@
 /* ============================================================
    CLASSPILOT MARKETING SITE — DESIGN SYSTEM
-   ------------------------------------------------------------
-   Palette sampled directly from the real ClassPilot logo:
-   navy (the "C") -> teal (the "P"), with the pencil's warm
-   cream as a sparing accent. Signature motif: ruled notebook
-   lines — this product replaces a teacher's paper دفتر, so the
-   hero and CTA carry that ledger texture literally.
    ============================================================ */
 
 :root {
@@ -44,7 +38,6 @@
   --container: 1180px;
 }
 
-/* ---------- Reset ---------- */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -65,12 +58,10 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .container { max-width: var(--container); margin: 0 auto; padding: 0 24px; }
 .container--narrow { max-width: 760px; }
 
-/* ---------- Reveal-on-scroll ---------- */
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .js .reveal.is-visible { opacity: 1; transform: none; }
 .js .reveal--delay-1.is-visible { transition-delay: .12s; }
 
-/* ---------- Buttons ---------- */
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   padding: 13px 26px; border-radius: var(--radius-pill); font-weight: 700; font-size: 15px;
@@ -84,9 +75,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .btn--sm { padding: 9px 18px; font-size: 13.5px; }
 .btn--lg { padding: 16px 34px; font-size: 16px; }
 
-/* ============================================================
-   NAV
-   ============================================================ */
+/* ============================================================ NAV */
 .nav { position: sticky; top: 0; z-index: 100; background: rgba(247,249,250,.86); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; height: 76px; gap: 24px; }
 .nav__brand { display: flex; align-items: center; gap: 10px; }
@@ -99,9 +88,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .nav__burger { display: none; flex-direction: column; gap: 5px; padding: 8px; }
 .nav__burger span { width: 22px; height: 2px; background: var(--navy-deep); border-radius: 2px; transition: transform .25s, opacity .25s; }
 
-/* ============================================================
-   HERO — ruled-notebook signature
-   ============================================================ */
+/* ============================================================ HERO */
 .hero { position: relative; overflow: hidden; padding: var(--space-7) 0 var(--space-6); }
 .hero__ruled {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
@@ -128,9 +115,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .tag--ok { background: #DEF5F5; color: var(--teal); }
 .tag--warn { background: #FCEFD9; color: var(--warn); }
 
-/* ============================================================
-   SECTIONS — shared
-   ============================================================ */
+/* ============================================================ SECTIONS */
 .section { padding: var(--space-8) 0; }
 .section--tint { background: var(--paper-warm); }
 .section__eyebrow { font-size: 13.5px; font-weight: 700; color: var(--teal); letter-spacing: .02em; margin-bottom: var(--space-2); }
@@ -138,9 +123,8 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .section__title--start { text-align: right; }
 .section__lead { margin-top: var(--space-3); font-size: 16.5px; color: var(--ink-soft); max-width: 60ch; }
 .section > .container > .section__title, .section > .container > .section__lead { text-align: center; margin-left: auto; margin-right: auto; }
-#teacher .section__title, #manager .section__title { text-align: right; margin: 0; }
+#teacher .section__title, #parent .section__title { text-align: right; margin: 0; }
 
-/* ---------- Feature grid ---------- */
 .grid { display: grid; gap: var(--space-4); margin-top: var(--space-6); }
 .grid--features { grid-template-columns: repeat(3, 1fr); }
 .feature-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-5); transition: transform .25s var(--ease), box-shadow .25s var(--ease), border-color .25s; }
@@ -149,22 +133,19 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .feature-card h3 { font-size: 16.5px; font-weight: 700; color: var(--navy-deep); margin-bottom: 6px; }
 .feature-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
 
-/* ---------- User type cards ---------- */
-.grid--users { grid-template-columns: repeat(4, 1fr); }
-.user-card { background: var(--surface); border-radius: var(--radius-md); padding: var(--space-5); text-align: center; border: 1px solid var(--line); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+.grid--users { grid-template-columns: repeat(2, 1fr); max-width: 620px; margin-left: auto; margin-right: auto; }
+.user-card { background: var(--surface); border-radius: var(--radius-md); padding: var(--space-6) var(--space-5); text-align: center; border: 1px solid var(--line); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
 .user-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.user-card__icon { font-size: 32px; width: 64px; height: 64px; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--paper-warm); }
-.user-card h3 { font-size: 16px; font-weight: 700; color: var(--navy-deep); margin-bottom: 6px; }
-.user-card p { font-size: 13.5px; color: var(--ink-soft); }
+.user-card__icon { font-size: 38px; width: 76px; height: 76px; margin: 0 auto var(--space-3); display: flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--paper-warm); }
+.user-card h3 { font-size: 18px; font-weight: 700; color: var(--navy-deep); margin-bottom: 6px; }
+.user-card p { font-size: 14px; color: var(--ink-soft); }
 
-/* ---------- Steps ---------- */
 .steps { display: flex; align-items: center; justify-content: center; gap: 4px; margin-top: var(--space-6); flex-wrap: wrap; }
 .step { display: flex; flex-direction: column; align-items: center; gap: var(--space-3); width: 150px; }
 .step__icon { width: 68px; height: 68px; border-radius: 50%; background: var(--gradient-brand); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 26px; box-shadow: var(--shadow-md); }
 .step__label { font-weight: 700; font-size: 14.5px; color: var(--navy-deep); text-align: center; }
 .step__line { flex: 1; min-width: 30px; height: 2px; background: repeating-linear-gradient(to left, var(--line-strong) 0 6px, transparent 6px 12px); margin-bottom: 34px; }
 
-/* ---------- Split sections (teacher / manager / parent) ---------- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6); align-items: center; }
 .section--split-rev .split { grid-template-columns: 1fr 1fr; }
 .split__lead { margin-top: var(--space-3); font-size: 16px; color: var(--ink-soft); }
@@ -172,7 +153,6 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .check-list li { font-size: 14.5px; font-weight: 600; color: var(--ink); padding-inline-start: 26px; position: relative; }
 .check-list li::before { content: "✓"; position: absolute; inset-inline-start: 0; color: var(--teal); font-weight: 800; }
 
-/* ---------- Mockup frames ---------- */
 .mock-frame { border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; background: var(--surface); border: 1px solid var(--line); }
 .mock-frame--browser .mock-frame__bar { display: flex; gap: 6px; padding: 12px 16px; background: var(--paper-warm); border-bottom: 1px solid var(--line); }
 .mock-frame__bar span { width: 10px; height: 10px; border-radius: 50%; background: var(--line-strong); }
@@ -181,9 +161,9 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .mock-stat { flex: 1; text-align: center; background: var(--paper-warm); border-radius: var(--radius-sm); padding: var(--space-4) var(--space-2); }
 .mock-stat__num { font-family: var(--font-mono); font-size: 26px; font-weight: 700; color: var(--navy); }
 .mock-stat__label { font-size: 12px; color: var(--ink-soft); margin-top: 6px; }
-.mock-frame__body--grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.mock-chip { background: var(--paper-warm); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px; font-size: 13px; font-weight: 700; color: var(--navy-deep); text-align: center; }
-.mock-chip--sm { padding: 9px; font-size: 12px; margin-bottom: 8px; }
+.mock-frame__body--grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.mock-chip { width: calc(50% - 6px); box-sizing: border-box; background: var(--paper-warm); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px; font-size: 13px; font-weight: 700; color: var(--navy-deep); text-align: center; }
+.mock-chip--sm { padding: 9px; font-size: 12px; margin-bottom: 8px; width: 100%; }
 .mock-chip--warn { color: var(--warn); background: #FCEFD9; }
 
 .mock-frame--phone { width: 260px; margin: 0 auto; border-radius: 34px; border: 6px solid var(--navy-deep); position: relative; }
@@ -196,7 +176,6 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 
 .mock-frame--tablet { width: 320px; border-radius: 22px; border: 8px solid var(--navy-deep); }
 
-/* ---------- Dark analytics section ---------- */
 .section--dark { background: var(--navy-deep); color: #fff; }
 .section__eyebrow--onDark { color: var(--teal-light); }
 .section__title--onDark { color: #fff; }
@@ -219,22 +198,18 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .trend-chart__line { fill: none; stroke: var(--teal-light); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .trend-chart__dot { fill: var(--teal-light); }
 
-/* ---------- Reports ---------- */
 .grid--reports { grid-template-columns: repeat(4, 1fr); }
 .report-item { display: flex; align-items: center; gap: 10px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 14px 16px; font-size: 13.5px; font-weight: 600; color: var(--navy-deep); }
 .report-item span { font-size: 18px; }
 .export-row { display: flex; justify-content: center; gap: 14px; margin-top: var(--space-5); }
 .export-pill { background: var(--gradient-brand); color: #fff; font-weight: 700; font-size: 13px; padding: 10px 22px; border-radius: var(--radius-pill); }
 
-/* ---------- Device preview ---------- */
 .devices { display: flex; justify-content: center; align-items: center; gap: var(--space-6); flex-wrap: wrap; margin-top: var(--space-6); }
 .mock-frame--device { flex-shrink: 0; }
 
-/* ---------- Security ---------- */
 .role-chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: var(--space-5); }
 .role-chip { background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: var(--radius-pill); padding: 10px 22px; font-size: 13.5px; font-weight: 700; color: var(--navy-deep); }
 
-/* ---------- FAQ ---------- */
 .faq-list { margin-top: var(--space-6); display: flex; flex-direction: column; gap: 10px; }
 .faq-item { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); overflow: hidden; }
 .faq-item__q { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: var(--space-4) var(--space-5); font-weight: 700; font-size: 15px; color: var(--navy-deep); text-align: right; }
@@ -243,7 +218,6 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .faq-item__a { max-height: 0; overflow: hidden; transition: max-height .35s var(--ease); }
 .faq-item__a p { padding: 0 var(--space-5) var(--space-4); font-size: 14.5px; color: var(--ink-soft); }
 
-/* ---------- CTA ---------- */
 .cta { position: relative; overflow: hidden; background: var(--gradient-brand); padding: var(--space-8) 0; text-align: center; }
 .cta__ruled { position: absolute; inset: 0; background-image: repeating-linear-gradient(to bottom, transparent, transparent 47px, rgba(255,255,255,.08) 48px); pointer-events: none; }
 .cta__inner { position: relative; z-index: 1; }
@@ -251,13 +225,11 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .cta__lead { margin-top: var(--space-2); font-size: 16px; color: rgba(255,255,255,.85); margin-bottom: var(--space-5); }
 .cta .btn--primary { background: #fff; color: var(--navy); }
 
-/* ---------- Contact ---------- */
 .contact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-3); margin-top: var(--space-6); }
 .contact-item { display: flex; flex-direction: column; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-md); padding: var(--space-4); font-size: 13px; font-weight: 600; color: var(--navy-deep); text-align: center; word-break: break-word; transition: transform .2s var(--ease); }
 .contact-item:hover { transform: translateY(-3px); }
 .contact-item span { font-size: 22px; }
 
-/* ---------- Footer ---------- */
 .footer { background: var(--navy-deep); color: rgba(255,255,255,.8); padding: var(--space-6) 0 var(--space-4); }
 .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-4); padding-bottom: var(--space-5); border-bottom: 1px solid rgba(255,255,255,.1); }
 .footer__brand { display: flex; align-items: center; gap: 12px; }
@@ -269,9 +241,7 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
 .footer__links a:hover { color: #fff; }
 .footer__copy { padding-top: var(--space-4); text-align: center; font-size: 12.5px; color: rgba(255,255,255,.45); font-family: var(--font-mono); }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/* ============================================================ RESPONSIVE */
 @media (max-width: 1024px) {
   .hero__title { font-size: 42px; }
   .grid--features { grid-template-columns: repeat(2, 1fr); }
@@ -293,13 +263,13 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
   .hero__visual { order: -1; }
   .split { grid-template-columns: 1fr; }
   .section--split-rev .split__visual { order: -1; }
-  .grid--users { grid-template-columns: repeat(2, 1fr); }
+  .grid--users { grid-template-columns: repeat(2, 1fr); max-width: 400px; }
   .grid--reports { grid-template-columns: repeat(2, 1fr); }
   .check-list { grid-template-columns: 1fr; }
   .section__title { font-size: 28px; }
   .steps { flex-direction: column; }
   .step__line { display: none; }
-  #teacher .section__title, #manager .section__title { text-align: center; }
+  #teacher .section__title, #parent .section__title { text-align: center; }
   .split__copy { text-align: center; }
   .check-list { text-align: right; max-width: 320px; margin-left: auto; margin-right: auto; }
 }
@@ -309,7 +279,9 @@ button { font: inherit; background: none; border: none; cursor: pointer; color: 
   .hero { padding: var(--space-6) 0 var(--space-5); }
   .hero__title { font-size: 28px; }
   .hero__lead { font-size: 15.5px; }
-  .grid--features, .grid--users, .grid--reports, .contact-grid { grid-template-columns: 1fr 1fr; }
+  .grid--features, .contact-grid { grid-template-columns: 1fr 1fr; }
+  .grid--users { grid-template-columns: 1fr; max-width: 260px; }
+  .grid--reports { grid-template-columns: 1fr 1fr; }
   .section { padding: var(--space-6) 0; }
   .section__title { font-size: 24px; }
   .cta__title { font-size: 26px; }
